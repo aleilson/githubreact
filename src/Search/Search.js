@@ -32,8 +32,6 @@ class Search extends Component {
                 this.setState({errorMessage: ""})
             })
             .catch((error) => {
-                const response = error.response
-                console.log(response.status)
                 this.setState({errorMessage: "Usuário não encontrado!"})
             })
             
